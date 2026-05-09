@@ -1,0 +1,85 @@
+:root {
+  --shadow-soft: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-medium: 0 8px 15px rgba(0, 0, 0, 0.2);
+  --shadow-glow: 0 0 15px rgba(255, 255, 255, 0.3);
+  --text-shadow-soft: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  --text-shadow-glow: 0 0 10px rgba(255, 255, 255, 0.8);
+  --text-shadow-bold: 3px 3px 0px rgba(0, 0, 0, 0.8);
+	*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+};
+            .judul{
+                font-size: 50;
+                font-style:italic;
+                color: white;
+                text-align: center;
+                padding: 13;
+				text-shadow:var(--text-shadow-soft)
+            };
+            .textcontent{
+                font-size: 20;
+                color: white
+            };
+            /*element*/
+            .boxprofile {
+				margin-top:10vh;
+				margin-bottom:10vh;
+				max-height: 80vh;
+				overflow: hidden;
+				transition: var(--transition-2);
+                position: fixed;
+                justify-content: flex-start;
+				padding: 10px;
+                width: 200px;
+                align-items: center;
+                background-color: rgba(0,15,15,0.3);
+				backdrop-filter: blur(8px);
+				border-radius: 20px;
+				box-shadow: var(--shadow-medium);				
+            };
+			.boxprofile-font {
+				font-size: 20;
+                color: white;
+				text-shadow:var(--text-shadow-soft);
+			};
+            .fotoprofile{
+                flex-wrap: wrap;
+                justify-content:center;                
+                border: 5px solid #ccc;
+                width: 30%;
+                align-items:center;
+                display: flex;
+                background: var(--bg-gradient-onyx);
+                border-radius: 20px;
+            };
+			.background {
+    min-height: 100vh;        
+    width: 100%;              
+    display: flex;            
+    margin: 0;
+    padding: 0;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY2Odu48eQs7smy3Dori0F2K-Jc-AyRMyNjQ&s");
+    background-size: cover;
+    background-color: #2c2c2c; /* Warna cadangan jika gambar gagal load */
+}
+
+.content-utama {
+	margin-left:10vh;
+    flex: 1;            /* Mengambil sisa ruang di kanan sidebar */
+    display: flex;      /* Jadikan flex lagi untuk mengatur isinya */
+    
+    /* KUNCI UNTUK DI TENGAH: */
+    justify-content: center; /* Tengah secara Horizontal (Kiri-Kanan) */
+    align-items: center;     /* Tengah secara Vertikal (Atas-Bawah) */
+    
+    padding: 20px;
+    background-color: transparent; /* Atau warna lain */
+}
+
+.box-tengah {
+    text-align: center; /* Agar teks di dalamnya juga rata tengah */
+    max-width: 600px;   /* Membatasi lebar agar tidak terlalu melar */
+}
+}
